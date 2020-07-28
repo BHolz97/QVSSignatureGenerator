@@ -2,7 +2,7 @@ body {
     background: #FC466B;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3F5EFB, #005804);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3F5EFB, #005804); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    font-family: 'Roboto', sans-serif;
 }
 
 #logo-div {
@@ -11,6 +11,13 @@ body {
     height: 100%;
     flex-grow: 1;
     text-align: center;
+    max-width: 40%;
+}
+
+#header{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(90, 90, 90);
+    margin-bottom: 10%;
 }
 
 #logo-img{
