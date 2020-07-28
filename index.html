@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+
+    <title>QVS Signature Generator</title>
+</head>
+<body>
+
+    <div id="main-div">
+        <div id="logo-div">
+            <img alt="Queen Victoria School logo" id="logo-img" border="0" src="https://www.qvs.school/wp-content/themes/qvs/library/images/QVS-badge.svg">
+        </div>
+        <div id="form-div">
+            <form action="/signature" method="POST">
+                <div class="input">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" placeholder="Full name" id="name" name="name" class="form_field" required>
+                </div>
+                <div class="input">
+                    <!-- <label for="job1">Position</label> -->
+                    <input type="text" placeholder="Position" id="job1" name="job1" class="form_field" required>
+                </div>
+                <!-- <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your full name" id="job2" name="job2">
+                </div> -->
+                <div class="input">
+                    <!-- <label for="tel">Telephone number</label> -->
+                    <input type="tel" placeholder="Telephone number" id="tel" name="tel" class="form_field" required>
+                </div>
+                <div class="input">
+                    <!-- <label for="name">Email</label> -->
+                    <input type="email" placeholder="Email" id="email" name="email" class="form_field" required>
+                </div>
+                <div class="input">
+                    <input type="submit" value="Submit" id="btn-submit">
+                </div>
+            </form>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>

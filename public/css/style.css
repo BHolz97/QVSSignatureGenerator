@@ -1,0 +1,74 @@
+body {
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #005804);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #005804); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#logo-div {
+    /* float: left; */
+    /* background-color: cyan; */
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#logo-img{
+    width: 200px;
+    height: auto;
+}
+
+#main-div {
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin: auto;
+    margin-top: 8vh;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#form-div {
+    /* background-color: darkorange; */
+    flex-grow: 2;
+    padding-top: 7%;
+    padding-left: 11%;
+    /* padding-bottom: 2%; */
+}
+
+#btn-submit {
+    border: none;
+    padding: 3%;
+    color: white;
+    background-color: #3F5EFB;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#btn-submit:hover {
+    background-color: #5975ff;
+}
+
+#btn-submit:focus{
+    outline: none;
+}
+
+.input {
+    margin-bottom: 8%;
+}
+
+.form_field {
+    border: none;
+    /* border-bottom: 2px solid rgb(151, 151, 151); */
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(235, 235, 235);
+    width: 80%;
+    padding-left: 2%;
+    border-radius: 5px;
+}
+
+.form_field:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(52, 106, 255);
+}
