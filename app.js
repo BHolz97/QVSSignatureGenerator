@@ -15,18 +15,17 @@ app.get("/", function(req, res){
 
 app.post("/signature", function(req, res){
 
-    let tel = '0';
+    let tel = req.body.tel;
 
-    if(req.body.tel == null){
-        console.log("Null");
-        tel = '0000000000';
+    if(tel == ''){
+        tel = '+44 1786 822288';
     }
 
     res.render("signature", {
         name: req.body.name,
         position: req.body.job1,
         cell: req.body.cell,
-        tel: req.body.tel,
+        tel: tel,
         email: req.body.email
     });
 });
