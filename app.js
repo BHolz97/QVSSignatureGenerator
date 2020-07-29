@@ -14,11 +14,18 @@ app.get("/", function(req, res){
 });
 
 app.post("/signature", function(req, res){
-    console.log(req.body.name);
-    console.log(req.body.email);
+
+    let tel = '0';
+
+    if(req.body.tel == null){
+        console.log("Null");
+        tel = '0000000000';
+    }
+
     res.render("signature", {
         name: req.body.name,
         position: req.body.job1,
+        cell: req.body.cell,
         tel: req.body.tel,
         email: req.body.email
     });
